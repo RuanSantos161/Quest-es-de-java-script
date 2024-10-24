@@ -80,3 +80,35 @@ let x=999;
 x *=4;
 console.log(x);
 
+//Décima segunda
+let x=999;
+x /=2;
+console.log(x);
+
+//Décima terceira
+let x=998;
+x %=3;
+console.log(x);
+
+//Décima quarta
+function verificarNumero() {
+
+    let entrada = prompt("Por favor, insira um número:");
+
+    let num = parseFloat(entrada);
+
+    if (isNaN(num)) {
+        alert("Por favor, insira um número válido.");
+        return;
+    }
+
+    if (num > 0) {
+        alert(num + " é um número positivo.");
+    } else if (num < 0) {
+        alert(num + " é um número negativo.");
+    } else {
+        alert(num + " é zero.");
+    }
+}
+verificarNumero();
+
